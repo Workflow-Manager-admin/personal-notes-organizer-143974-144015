@@ -1,0 +1,46 @@
+.sidebar-nav {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem 0.75rem 1.5rem 1.25rem;
+  background: #f8f9fa;
+}
+
+.sidebar-header {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.tags-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tags-list li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0.35rem 0.4rem 0.35rem 0;
+  border-radius: var(--border-radius);
+  transition: background 0.2s;
+  font-size: 1rem;
+  color: var(--color-secondary);
+}
+
+.tags-list li:hover, .tags-list li:focus {
+  background: var(--color-accent);
+  color: #222;
+  outline: none;
+}
+
+.tag-bullet {
+  width: 9px;
+  height: 9px;
+  margin-right: 0.63rem;
+  background: var(--color-primary);
+  border-radius: 50%;
+  display: inline-block;
+}

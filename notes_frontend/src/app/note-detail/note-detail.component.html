@@ -1,0 +1,15 @@
+<div *ngIf="loading" class="loader">Loading...</div>
+<div *ngIf="!loading && note" class="note-detail">
+  <div class="note-detail-nav">
+    <button class="nav-btn" (click)="goBack()" aria-label="Back">&#8592; Back</button>
+    <div>
+      <button class="action-btn" (click)="editNote()" aria-label="Edit">&#9998; Edit</button>
+      <button class="action-btn" (click)="deleteNote()" aria-label="Delete">&#128465; Delete</button>
+    </div>
+  </div>
+  <div class="note-detail-title">{{note.title}}</div>
+  <div class="note-detail-tags">
+    <span class="note-tag" *ngFor="let t of note.tags">{{ t }}</span>
+  </div>
+  <div class="note-detail-content">{{note.content}}</div>
+</div>

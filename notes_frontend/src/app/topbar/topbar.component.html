@@ -1,0 +1,10 @@
+<header class="topbar">
+  <div class="logo" (click)="goHome()" tabindex="0">
+    <span class="icon">&#9998;</span>
+    <span class="title">Notes Organizer</span>
+  </div>
+  <div class="topbar-actions">
+    <input class="searchbox" type="text" [(ngModel)]="query" placeholder="Search notes" (keyup)="onSearchKeyup($event)">
+    <button class="add-btn" (click)="newNote()" aria-label="New note">&#43; New</button>
+  </div>
+</header>

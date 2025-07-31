@@ -1,0 +1,9 @@
+<nav class="sidebar-nav">
+  <div class="sidebar-header">Tags / Folders</div>
+  <ul class="tags-list">
+    <li *ngFor="let tag of tags" (click)="onTagClick(tag)" tabindex="0">
+      <span class="tag-bullet"></span>
+      {{ tag }}
+    </li>
+  </ul>
+</nav>
