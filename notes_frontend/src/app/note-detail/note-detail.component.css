@@ -1,0 +1,68 @@
+.loader {
+  margin-top: 3em;
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+.note-detail {
+  margin: 2.5em auto 2em auto;
+  background: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 18px #d2ebfd23, 0 1.5px 2px #e4ebf325;
+  padding: 2.3em 2em 1.4em 2em;
+  max-width: 627px;
+}
+
+.note-detail-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-btn, .action-btn {
+  background: var(--color-accent);
+  color: var(--color-secondary);
+  border: none;
+  border-radius: 4px;
+  padding: 0.43em 1.09em;
+  font-weight: 600;
+  font-size: 1em;
+  margin-right: 0.3em;
+  cursor: pointer;
+  margin-bottom: 0.45em;
+  box-shadow: 0 1px 2px #fde23e32;
+}
+
+.nav-btn:last-child, .action-btn:last-child {
+  margin-right: 0;
+}
+
+.note-detail-title {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.21em;
+  margin-top: 0.19em;
+  word-break: break-all;
+}
+
+.note-detail-tags {
+  margin-bottom: 1.09em;
+}
+
+.note-tag {
+  background: var(--color-accent);
+  color: #232323;
+  border-radius: 4.5px;
+  font-size: 1em;
+  margin-right: 0.43em;
+  padding: 0.19em 0.64em;
+}
+
+.note-detail-content {
+  color: var(--color-secondary);
+  line-height: 1.8;
+  font-size: 1.11em;
+  margin-top: 1.2em;
+  white-space: pre-wrap;
+}

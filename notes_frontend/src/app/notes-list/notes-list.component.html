@@ -1,0 +1,22 @@
+<div class="notes-list-container">
+  <ng-container *ngIf="loading">
+    <div class="notes-loading">Loading notes...</div>
+  </ng-container>
+  <ng-container *ngIf="!loading && filtered.length === 0">
+    <div class="notes-empty">No notes found.</div>
+  </ng-container>
+  <div class="notes-list" *ngIf="!loading && filtered.length">
+    <div class="note-card"
+         *ngFor="let note of filtered"
+         (click)="openNote(note)"
+         tabindex="0">
+      <div class="note-title">{{ note.title }}</div>
+      <div class="note-content">{{ note.content | slice:0:80 }}<span *ngIf="note.content.length > 80">…</span></div>
+      <div class="note-tags">
+        <span class="note-tag" *ngFor="let tag of note.tags">{{ tag }}</span>
+      </div>
+      <button class="note-card-delete" (click)="deleteNote(note); $event.stopPropagation();" aria-label="Delete">&#128465;</button>
+      <button class="note-card-edit" (click)="openNote(note); $event.stopPropagation();" aria-label="Edit">&#9998;</button>
+    </div>
+  </div>
+</div>

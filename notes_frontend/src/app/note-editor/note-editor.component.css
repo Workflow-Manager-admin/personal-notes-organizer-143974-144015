@@ -1,0 +1,87 @@
+.note-editor-form {
+  background: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 17px #c7dae415;
+  padding: 2.4em 2.1em 1.7em 2.1em;
+  margin: 2.8em auto 2em auto;
+  max-width: 600px;
+  min-width: 275px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.05em;
+}
+
+.editor-loading {
+  margin-top: 3em;
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+.note-editor-form h2 {
+  margin-bottom: 0.5em;
+  color: var(--color-primary);
+}
+
+.note-editor-form label {
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 1.03em;
+  margin-bottom: 0.3em;
+  margin-top: 0.1em;
+}
+
+.note-editor-form input, .note-editor-form textarea {
+  font-size: 1em;
+  padding: 0.48em 0.95em;
+  margin-top: 0.19em;
+  margin-bottom: 1.05em;
+  border: 1.6px solid #dbdbdb;
+  border-radius: 7px;
+  background: #f6f8fa;
+  color: #1d283e;
+  width: 100%;
+  resize: none;
+  transition: border 0.1s, background 0.17s;
+}
+
+.note-editor-form input:focus, .note-editor-form textarea:focus {
+  outline: 1.5px solid var(--color-primary);
+  border-color: var(--color-accent);
+  background: #fffde7;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 1.05em;
+  margin-top: 1.22em;
+  justify-content: flex-end;
+}
+
+.save-btn, .cancel-btn {
+  border: none;
+  border-radius: 24px;
+  padding: 0.5em 1.5em;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.14s;
+  box-shadow: 0 2px 7px #d2c00025;
+}
+.save-btn {
+  background: var(--color-primary);
+}
+.save-btn:disabled {
+  background: #b6c5de;
+  cursor: not-allowed;
+}
+.save-btn:not(:disabled):hover {
+  background: #1257a6;
+}
+.cancel-btn {
+  background: var(--color-secondary);
+}
+
+.cancel-btn:hover {
+  background: #757575;
+}
